@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <bool-header />
+    <bool-main />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BoolHeader from "./components/BoolHeader.vue";
+import BoolMain from "./components/BoolMain.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    BoolHeader,
+    BoolMain,
+  },
+};
 </script>
 
 <style lang="scss">
